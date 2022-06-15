@@ -1,13 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { SpeechProvider } from "@speechly/react-client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const appId = "YOUR_APP_ID_FROM_SPEECHLY_DASHBOARD";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <SpeechProvider appId={appId}>
+      <App />
+    </SpeechProvider>
   </React.StrictMode>
 );
 
