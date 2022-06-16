@@ -45,14 +45,14 @@ const Speechly = () => {
   }, [segment]);
 
   return (
-    <div>
-      <BigTranscript placement="top" />
+    <div style={{ padding: "10px" }}>
+      <BigTranscript />
       <PushToTalkButton placement="bottom" captureKey=" " />
-      <div className="status">
+      <p>
         State: {stateToString(clientState)}. Listening: {listening.toString()}
-      </div>
-      <div className="mic-button">
-        <button
+      </p>
+      <div>
+        {/* <button
           onClick={connect}
           disabled={clientState !== DecoderState.Disconnected}
         >
@@ -63,7 +63,7 @@ const Speechly = () => {
           disabled={microphoneState !== AudioSourceState.Stopped}
         >
           Initialize mic
-        </button>
+        </button> */}
         <button onClick={startListening}>Start Listening</button>
         <button onClick={stopListening}>Stop Listening</button>
       </div>

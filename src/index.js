@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { SpeechProvider } from "@speechly/react-client";
 
-const appId = "YOUR_APP_ID_FROM_SPEECHLY_DASHBOARD";
+const appId = "f8a4187b-7c40-4b5c-b085-e80c77843f97";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
