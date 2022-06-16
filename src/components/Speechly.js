@@ -51,6 +51,7 @@ const Speechly = () => {
       <p>
         State: {stateToString(clientState)}. Listening: {listening.toString()}
       </p>
+      <h4>Click "Start Listening" and say any command</h4>
       <div>
         {/* <button
           onClick={connect}
